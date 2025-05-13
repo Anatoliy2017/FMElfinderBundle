@@ -27,9 +27,9 @@
         "symfony/asset":                       "~2.8|~3.0|~4.0",
         "components/elfinder":                 "~3",
         "studio-42/elfinder":                  "~2.1",
-        "robloach/component-installer":        "~0.2"
+        "robloach/component-installer":        "^2.0"
     },
-    "require-dev" : {
+    "require-dev": {
         "symfony/phpunit-bridge": "^4.0",
         "matthiasnoback/symfony-config-test":  "^3.0",
         "matthiasnoback/symfony-dependency-injection-test": "^2",
@@ -49,9 +49,10 @@
     "autoload-dev": {
         "psr-4": { "FM\\ElfinderBundle\\Tests\\": "tests/" }
     },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "9.0-dev"
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Anatoliy2017/component-installer.git"
         }
-    }
+    ]
 }
